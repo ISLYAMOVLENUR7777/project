@@ -1,21 +1,37 @@
 "use strict";
+let num = 20;
+function showFirstMessage(text) {
+    console.log(text);
+    let num = 10;
+    console.log(num);
+}
 
-const numberOfFiles = +prompt('Сколько фильмов Вы уже посмотрели?', '');
+showFirstMessage('Hello world');
+console.log(num);
 
-const personalMovieDB = {
-    count: numberOfFiles,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
+// function calc(a, b) {
+//     return (a + b);
+// }
+
+// console.log(calc(4, 3));
+// console.log(calc(8, 5));
+// console.log(calc(10, 7));
+
+
+function ret () {
+    let num = 50;
+    return num;
+}
+const anotherNum = ret();
+
+console.log(anotherNum);
+
+
+const logger = function() {
+    console.log('Hello');
 };
 
-const   a = prompt('Один из последних просмотренных фильмов', ''),
-        b = prompt('На сколько оцените его?', ''),
-        c = prompt('Один из последних просмотренных фильмов', ''),
-        d = prompt('На сколько оцените его?', '');
+logger();
 
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
 
-console.log(personalMovieDB);
+const calc = (a, b) =>{return a + b};
