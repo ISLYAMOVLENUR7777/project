@@ -1,0 +1,101 @@
+Прямых констант в JS не бывает!
+Использовать let !
+"use strict"; прописываем в самом главном файле! 
+
+
+Числа без кавычек!
+Строки в кавычках!
+
+Типы данных: простые типы, объекты!
+
+
+null
+
+undefined
+
+объект : свойства, методы
+
+Массив частный случай объекта!
+
+Вся информация которая приходит от строк будет STRING!!!
+
+console.log(typeof(null)); Выводит объект но это ошибка!!!
+
+
+Интерполяция
+
+const category = 'toys';
+
+console.log(`https://someurl.com/${category}/5`);
+
+const user = "Ivan";
+
+alert (`Privet, ${user}`);
+
+
+Постфиксная сначала возвращает старое значение а после изменяет
+
+Префиксная 
+
+9 Операторы!!!
+
+10 GIT!!!
+
+https://git-scm.com/
+
+https://githowto.com/ru
+
+1	git init
+
+local vs global
+
+2	git config --local user.name "Lenur"
+3	git config --local user.email "Lenur102419922mail.ru"
+
+статус репозитория
+
+git status
+
+добавление в слежку изменений всех файлов
+4	git add -A 
+
+
+	git add file
+
+5	git commit -a -m"first commit"
+
+
+Следующий commit
+	git add -A
+	git commit -a -m"first commit"
+
+
+github
+
+git remote add origin https://github.com/ISLYAMOVLENUR7777/project.git
+
+git push
+
+
+
+
+
+
+git clone https://github.com/ISLYAMOVLENUR7777/project.git
+
+
+
+git pull
+
+merge
+:wq!
+
+
+Тернарный оператор
+
+(num ==50) ? console.log('Ok!') : console.log('Error');
+
+
+gitignore добавлять в проект
+
+GitKraken
