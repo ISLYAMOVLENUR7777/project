@@ -68,6 +68,7 @@ git status
 Следующий commit
 	git add -A
 	git commit -a -m"first commit"
+	git push
 
 
 github
@@ -151,3 +152,4 @@ function
 
 Замыкание функции
 Эта сама функция со всеми внешними переменные которые ей доступны!
+
