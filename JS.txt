@@ -1,5 +1,5 @@
 Прямых констант в JS не бывает!
-Использовать let !
+Использовать let иногда const!
 "use strict"; прописываем в самом главном файле! 
 
 
@@ -21,7 +21,6 @@ undefined
 
 console.log(typeof(null)); Выводит объект но это ошибка!!!
 
-
 Интерполяция
 
 const category = 'toys';
@@ -31,7 +30,6 @@ console.log(`https://someurl.com/${category}/5`);
 const user = "Ivan";
 
 alert (`Privet, ${user}`);
-
 
 Постфиксная сначала возвращает старое значение а после изменяет
 
@@ -77,31 +75,19 @@ git remote add origin https://github.com/ISLYAMOVLENUR7777/project.git
 
 git push
 
-
-
-
-
-
 git clone https://github.com/ISLYAMOVLENUR7777/project.git
-
-
 
 git pull
 
 merge
 :wq!
 
-
 Тернарный оператор : три аргумента
-
 (num == 50) ? console.log('Ok!') : console.log('Error');
-
 
 gitignore добавлять в проект
 
 GitKraken
-
-
 
 let num = 50;
 
@@ -122,10 +108,6 @@ for (let i = 1; i < 8; i++) {
     num++;
 }
 
-
-
-
-
 for (let i = 1; i < 10; i++) {
     if (i ===6) {
         break;
@@ -133,9 +115,7 @@ for (let i = 1; i < 10; i++) {
     console.log(i);
 }
 
-
 continue; пропускает шаг в цикле но не прерывает его!!!
-
 
 for (let i = 1; i < 10; i++) {
     if (i === 6) {
@@ -144,8 +124,6 @@ for (let i = 1; i < 10; i++) {
     console.log(i);
 }
 
-
-
 function 	
 1 создание
 2 запуск
@@ -153,26 +131,81 @@ function
 Замыкание функции
 Эта сама функция со всеми внешними переменные которые ей доступны!
 
+Объекты 
 
+Это структуры которые могут сохранять любые значения в виде ключ(key) значение
+Могут быть вложены объекты в объекты, массивы в объекты!
+У объектов есть встроенные методы и встроенные свойства
 
+В объекты можно записывать функции это будут методы
 
 for in  почитать 
-
 
 for (let key in options) {
     console.log(`Свойство ${key} имеет значение ${options[key]}`);
 }
 
-
-
-
-
 console.log(Object.keys(options).length);
-
-
 
 Деструктуризация
 const {border, bg} = options.colors;
 
+get set почитать!
+
+Массивы
+
+of Работает только с массиво подобными сущностями(массив, строка, псевдомассив, map, set, страница)
+for (let value of arr) {
+    console.log(value);
+}
+Цикл используют когда нужно использовать break continue
 
 
+Длина массива
+Последний индекс в массиве + 1!!!
+
+Переборка элементов массива 
+arr.forEach(function(item, i, arr) {
+    console.log(`${i}: ${item} внутри массива ${arr}`);
+});
+
+Трансформация МАССИВОВ
+
+split
+join
+sort
+
+
+Быстрая сортировка 
+
+const arr = [2,13,26,8,10];
+arr.sort(compareNum);
+console.log(arr);
+
+function compareNum(a, b) {
+    return a - b;
+}
+
+Псевдомассивы не имеют методов, хранят данные по порядку
+
+22
+При работе с объектами Передача идет не по значению а по ссылке!!!
+const copy = obj; // ссылку
+
+Глубокие и поверхностные копии!
+
+поверхностные копии! цикл
+
+function copy(mainObj) {
+    let objCopy = {};
+
+    let key;
+    for (key in mainObj) {
+        objCopy[key] = mainObj[key];
+    }
+
+    return objCopy;
+}
+
+Spread оператор!!!
+const newObj = {...q};
