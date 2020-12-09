@@ -207,5 +207,13 @@ function copy(mainObj) {
     return objCopy;
 }
 
-Spread оператор!!!
+Spread оператор с ES9!!!
 const newObj = {...q};
+
+23
+Прототипы
+
+const jonh = Object.create(soldier);
+
+// Object.setPrototypeOf(jonh, soldier);
+
